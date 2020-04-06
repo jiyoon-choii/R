@@ -1,0 +1,31 @@
+한글형태소분석은 R 아니면 잘 안 돌아간다 
+
+- 명령어) 
+conda env list > 현재 설치된 것 보여줌
+python - V
+conda create -n test python=3 > 아나콘다 가상환경 생성/이름지정
+conda activate test > 아나콘다 가상환경 활성화
+conda deactivate > 아나콘다 가상환경 비활성화
+conda install tensorflow-gpu > 아나콘다 패키지 설치
+conda env remove -n test > 아나콘다 가상환경 삭제
+
+패키지 설치 및 사용)
+- install.packages("패키지명", lib.loc='패키지설치경로") 
+
+변수를 만들 때 규칙) 
+- 변수명은 알파벳, 숫자, '_', ',' 으로 구성
+- 첫 글자는 알파벳 또는 ','로 시작
+- ','로 시작 시 바로 뒤에는 숫자가 올 수 없으며, 히든변수가 됨 
+
+할당)
+- 변수 할당 기호로는 <-, ->, =, <<-, ->>
+
+변수 조회)
+- ls( )	 : 작업 공간 내의 변수 이름 보여줌
+- ls.str( )		: 변수의 이름과 구조 표시 
+- ls(all.names=TRUE) : hidden 변수도 표시해 줌
+
+변수/값 삭제
+- rm(varA) : varA 변수 삭제 
+- rm(list=c("varA","varB")) : varA,varB 변수 삭제 
+- rm(list=ls(all=True)) :  
